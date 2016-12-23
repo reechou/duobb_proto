@@ -7,6 +7,11 @@ type CreateSpPlanReq struct {
 	Remark   string `json:"remark"`
 }
 
+type DeleteSpPlanReq struct {
+	User   string `json:"user"`
+	PlanId int64  `json:"planId"`
+}
+
 type SyncSpPlanSourceReq struct {
 	User             string `json:"user"`
 	PlanId           int64  `json:"planId"`
@@ -21,8 +26,14 @@ type GetSpPlanListFromUserReq struct {
 }
 
 type GetSpPlanListPublicReq struct {
-	Offset int64 `json:"offset"`
-	Num    int64 `json:"num"`
+	QueryNumStart        int64   `json:"queryNumStart"`
+	QueryNumEnd          int64   `json:"queryNumEnd"`
+	QueryPriceStart      float32 `json:"queryPriceStart"`
+	QueryPriceEnd        float32 `json:"queryPriceEnd"`
+	QueryCommissionStart float32 `json:"queryCommissionStart"`
+	QueryCommissionEnd   float32 `json:"queryCommissionEnd"`
+	Offset               int64   `json:"offset"`
+	Num                  int64   `json:"num"`
 }
 
 type GetSpPlanInfoFromUserReq struct {
