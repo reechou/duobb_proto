@@ -1,9 +1,5 @@
 package duobb_proto
 
-const (
-	AccountService = "DuobbAccountService"
-)
-
 type CreateDuobbAccountReq struct {
 	User     string `json:"user"`
 	Password string `json:"password"`
@@ -28,6 +24,10 @@ type UpdateDuobbAccountPicUrlReq struct {
 
 type GetDuobbAccountReq struct {
 	User string `json:"user"`
+}
+
+type GetDuobbAccountFromPhoneReq struct {
+	Phone string `json:"phone"`
 }
 
 type DuobbLogin struct {
