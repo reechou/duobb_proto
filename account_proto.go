@@ -42,3 +42,15 @@ type DuobbLogout struct {
 type DuobbHeartbeat struct {
 	User string `json:"user"`
 }
+
+type DuobbAccountUploadDataReq struct {
+	User              string  `json:"user"`
+	Day               string  `json:"day"`
+	TodaySendItemsNum int64   `json:"todaySendItemsNum"`
+	TodayBuyItemsNum  int64   `json:"todayBuyItemsNum"`
+	TodayCommission   float32 `json:"todayCommission"`
+}
+
+type GetAllDuobbDataReq struct {
+	User string `json:"user"`
+}
