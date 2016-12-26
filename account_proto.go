@@ -45,6 +45,7 @@ type DuobbHeartbeat struct {
 
 type DuobbAccountUploadDataReq struct {
 	User              string  `json:"user"`
+	AlimamaName       string  `json:"alimamaName"`
 	Day               string  `json:"day"`
 	TodaySendItemsNum int64   `json:"todaySendItemsNum"`
 	TodayBuyItemsNum  int64   `json:"todayBuyItemsNum"`
