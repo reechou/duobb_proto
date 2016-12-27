@@ -16,14 +16,16 @@ const (
 	DUOBB_MSG_PROCESS_ERROR
 	DUOBB_DB_ERROR
 	DUOBB_GET_PLAN_FROM_PW_ERROR
+	DUOBB_CREATE_PLAN_OVER_LIMIE_ERROR
 )
 
 const (
-	MSG_DUOBB_DB_ERROR           = "数据库执行失败"
-	MSG_DUOBB_LOGIN_ERROR        = "登录失败"
-	MSG_DUOBB_LOGOUT_ERROR       = "登出失败"
-	MSG_DUOBB_HEARTBEAT_ERROR    = "心跳处理失败"
-	MSG_DUOBB_PLAN_FROM_PW_ERROR = "密码获取选品计划失败"
+	MSG_DUOBB_DB_ERROR               = "数据库执行失败"
+	MSG_DUOBB_LOGIN_ERROR            = "登录失败"
+	MSG_DUOBB_LOGOUT_ERROR           = "登出失败"
+	MSG_DUOBB_HEARTBEAT_ERROR        = "心跳处理失败"
+	MSG_DUOBB_PLAN_FROM_PW_ERROR     = "密码获取选品计划失败"
+	MSG_DUOBB_CREATE_PLAN_OVER_LIMIT = "创建计划超过限制"
 )
 
 type Response struct {
