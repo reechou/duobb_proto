@@ -46,6 +46,14 @@ type GetSpPlanFromPasswordReq struct {
 	Password string `json:"password"`
 }
 
+type UpdateSpPlanInfoReq struct {
+	User     string `json:"user"`
+	PlanId   int64  `json:"planId"`
+	Name     string `json:"name"`
+	Password string `json:"password"`
+	Remark   string `json:"remark"`
+}
+
 type UpdateSpPlanItemsReq struct {
 	User          string  `json:"user"`
 	PlanId        int64   `json:"planId"`
