@@ -31,7 +31,7 @@ type GetDuobbAccountFromPhoneReq struct {
 }
 
 type GetDuobbAccountFromIdReq struct {
-	Id string `json:"id"`
+	Id int64 `json:"id"`
 }
 
 type DuobbLogin struct {
