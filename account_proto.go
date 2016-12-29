@@ -55,3 +55,14 @@ type DuobbAccountUploadDataReq struct {
 type GetAllDuobbDataReq struct {
 	User string `json:"user"`
 }
+
+type DuobbAccountUploadAlimamaCookieReq struct {
+	User        string `json:"user"`
+	AlimamaName string `json:"ali"`
+	Cookie      string `json:"c"`
+}
+
+type DuobbAccountGetAlimamaCookieReq struct {
+	User        string `json:"user"`
+	AlimamaName string `json:"ali"`
+}
