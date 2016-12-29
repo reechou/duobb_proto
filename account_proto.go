@@ -30,6 +30,10 @@ type GetDuobbAccountFromPhoneReq struct {
 	Phone string `json:"phone"`
 }
 
+type GetDuobbAccountFromIdReq struct {
+	Id string `json:"id"`
+}
+
 type DuobbLogin struct {
 	User     string `json:"user"`
 	Password string `json:"password"`
