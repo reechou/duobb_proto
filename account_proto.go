@@ -68,5 +68,5 @@ type DuobbAccountUploadAlimamaCookieReq struct {
 
 type DuobbAccountGetAlimamaCookieReq struct {
 	User        string `json:"user"`
-	AlimamaName string `json:"ali"`
+		AlimamaName string `json:"ali"`
 }
