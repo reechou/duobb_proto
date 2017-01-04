@@ -21,7 +21,7 @@ const (
 
 const (
 	MSG_DUOBB_DB_ERROR               = "数据库执行失败"
-	MSG_DUOBB_LOGIN_ERROR            = "登录失败"
+	MSG_DUOBB_LOGIN_ERROR            = "登录失败,请检查账号密码是否正确"
 	MSG_DUOBB_LOGOUT_ERROR           = "登出失败"
 	MSG_DUOBB_HEARTBEAT_ERROR        = "心跳处理失败"
 	MSG_DUOBB_PLAN_FROM_PW_ERROR     = "密码获取选品计划失败"
